@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",                // modern JS output
+    "module": "CommonJS",              // Node-style modules
+    "strict": true,                    // enable strict type checking
+    "esModuleInterop": true,           // allow default imports from CommonJS
+    "skipLibCheck": true,              // skip type checks for node_modules
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node", "@playwright/test"] // 👈 add Node + Playwright types
+  },
+  "include": ["tests/**/*.ts", "testdata/**/*.ts"], // folders with your TS files
+  "exclude": ["node_modules"]
+}
